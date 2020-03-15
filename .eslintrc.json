@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:flowtype/recommended", "prettier"],
+  "plugins": ["jsx-a11y", "flowtype"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": ["warn", { "code": 140, "ignoreUrls": true, "ignoreComments": true }],
+    "no-unused-vars": ["error"],
+    "camelcase": 0,
+    "no-unused-expressions": 0,
+    "semi": ["error"],
+    "no-console": "error"
+  },
+  "env": { "es6": true, "node": true },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  }
+}

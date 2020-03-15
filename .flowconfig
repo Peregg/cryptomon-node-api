@@ -1,0 +1,30 @@
+[ignore]
+
+[include]
+
+[libs]
+./type-def-libs
+
+[lints]
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=./src
+module.file_ext=.scss
+module.file_ext=.js
+
+module.name_mapper='^constants\/\(.*\)$' -> '<PROJECT_ROOT>/src/constants/\1'
+module.name_mapper='^types\/\(.*\)$' -> '<PROJECT_ROOT>/src/types/\1'
+module.name_mapper='^services\/\(.*\)$' -> '<PROJECT_ROOT>/src/services/\1'
+module.name_mapper='^middlewares\/\(.*\)$' -> '<PROJECT_ROOT>/src/middlewares/\1'
+module.name_mapper='^controllers\/\(.*\)$' -> '<PROJECT_ROOT>/src/controllers/\1'
+module.name_mapper='^routers\/\(.*\)$' -> '<PROJECT_ROOT>/src/routers/\1'
+module.name_mapper='^utils\/\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+module.name_mapper='^infrastructure\/\(.*\)$' -> '<PROJECT_ROOT>/src/infrastructure/\1'
+module.name_mapper='^contracts\/\(.*\)$' -> '<PROJECT_ROOT>/src/contracts/\1'
+module.name_mapper='^validators\/\(.*\)$' -> '<PROJECT_ROOT>/src/validators/\1'
+module.name_mapper='^models\/\(.*\)$' -> '<PROJECT_ROOT>/src/models/\1'
+module.name_mapper='^routers\/\(.*\)$' -> '<PROJECT_ROOT>/src/routers/\1'
+module.name_mapper='^src\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+[strict]

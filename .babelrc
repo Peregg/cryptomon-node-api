@@ -1,0 +1,29 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-flow"],
+  "plugins": [
+    [
+      "namespace", {
+      "disableSync": false,
+      "sources": [
+        "src"
+      ],
+      "excludes": [
+        "node_modules"
+      ],
+      "namespaces": {
+        "controllers": "src/controllers",
+        "middlewares": "src/middlewares",
+        "routers": "src/routers",
+        "utils": "src/utils",
+        "contracts": "src/contracts",
+        "constants": "src/constants",
+        "models": "src/models",
+        "validators": "src/validators",
+        "types": "src/types"
+        }
+      }
+    ],
+    "@babel/plugin-proposal-optional-chaining"
+  ]
+}
+
